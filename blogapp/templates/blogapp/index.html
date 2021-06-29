@@ -1,0 +1,250 @@
+{% load static %}
+
+<!--    
+    Titulo_de_proyecto:Sistema HOSPITALARIO
+    author: JarJdel
+    Fecha de modificacion: 25/05/21
+    Version de bootstrap: v5.0.1
+    Observacion: ------------
+-->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Inicio -->
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="HospitalSystem" />
+        <meta name="author" content="Jardel" />
+        <title> Sistema Hospitalario </title>
+        <link rel="icon" type="image/x-icon" href="static/image/ico.ico" />
+        
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Mi Estilo CSS-->
+    <link rel="stylesheet" href="{% static 'css/System_H_style.css' %}">
+    
+  </head>
+  <body>
+   
+    <!-- Menu de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top sps sps--abv" >
+        <div class="container">
+          <a class="navbar-brand" href="#">SIstema Hospitalario</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#carousel1">Ambulancia</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#carousel2">Diagnostico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#carousel3">Laboratorio Clínico</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reserva">Reservas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  <!-- Inicio de la cabecera -->
+    <header class="masthead">
+      <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+              <div class="col-lg-10 align-self-end">
+                  <h1 class="text-uppercase text-white font-weight-bold">SISTEMA HOSPITALARIO</h1>
+                  <p class="text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi libero deleniti commodi eum nihil dignissimos provident. Dolorem quasi, iusto assumenda pariatur veniam quos. Facere nostrum repellendus animi debitis! Corrupti, harum?</p>
+              </div>
+              <div class="col-lg-8 align-self-baseline">
+                  <a class="btn btn-primary btn-xl js-scroll-trigger" href="#carouselExampleCaptions">Ver servicios</a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!--Fin de la Cabecera-->
+
+  <!-- seccion de la filosofia de la empresa-->
+  <section class="page-section bg-light" id="nosotros">
+    <h2 class="text-center mt-0">Nosotros</h2>
+    <hr class="divider my-4" />
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-4 text-center ">              
+            <img class="img-circle" src="static/image/dib/mision.jpg" alt="Banner4">            
+            <h3>Misión</h3>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi et harum id vel aut eum ea iusto culpa doloribus vero. Optio numquam perspiciatis atque debitis aut sequi ipsum et labore..
+            </p>
+          </div>
+          <div class="col-12 col-sm-4 text-center ">              
+            <img class="img-circle" src="static/image/dib/vision.jpg" alt="Banner5">
+            <h3>Visión</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatem omnis necessitatibus nulla tempore, modi, incidunt aperiam obcaecati enim sequi accusantium libero consequatur veritatis consectetur quas aut! Expedita, dolore omnis?</p>
+          </div>
+          <div class="col-12 col-sm-4 text-center ">              
+            <img class="img-circle" src="static/image/dib/lema.jpg" alt="Banner6">
+            <h3>Lema</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi assumenda dignissimos, vero tempora vel porro soluta, ipsam distinctio debitis odio natus. Asperiores dolore earum nulla iusto, recusandae tempora totam qui.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- final de la seccion de filosofia de la empresa-->    
+
+    <!-- Carousel-->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" id="carousel1">
+          <div class="carousel-item active">
+            <img src="static/image/image/ambulancia.jpg" class="d-block w-100" alt="Slider 01">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ambulancia</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis totam odit illo blanditiis ipsa possimus eaque nihil adipisci. Quos dolorum deserunt voluptatem similique quae ipsum dolorem nemo error praesentium qui.</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="carousel2">
+            <img src="static/image/image/diagnostico.jpg" class="d-block w-100" alt="Slider 02">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Diagnostico</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illo dolore, autem excepturi cumque ut recusandae quam ipsa mollitia! Laudantium delectus nihil sequi mollitia repellendus eligendi perferendis reiciendis quaerat deleniti!</p>
+            </div>
+          </div>
+          <div class="carousel-item" id="carousel3">
+            <img src="static/image/image/laboratorio.jpg" class="d-block w-100" alt="Slider 03">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Laboratorio Clínico</h5>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid suscipit tempore dignissimos, modi asperiores alias, laborum ullam earum itaque ipsa fugit voluptates porro dolorem explicabo! Sequi, placeat. Rerum, ad.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Fin del Carousel-->
+    <main>
+      <!-- Servicios-->
+        <section class="page-section" id="servicio">
+            <div class="container ">
+              <h2 class="text-center mt-0">Servicios</h2>
+                <hr class="divider my-4" />
+                <div class="row">
+
+                    <div class="col-12 col-sm-4 text-center">
+                        <img class="img-fluid" src="static/image/dib/anime1.jpg" alt="Banner1">
+                        <h5>Ambulancia</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis ea sunt? Quidem nesciunt perferendis nobis ullam cumque, deserunt architecto laudantium perspiciatis repellendus magni distinctio excepturi vero ab natus autem!</p>
+                    </div>
+
+                    <div class="col-12 col-sm-4 text-center">
+                        <img class="img-fluid" src="static/image/dib/anime2.jpg" alt="Banner2">
+                        <h5>Laboratorio Clínico</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis ea sunt? Quidem nesciunt perferendis nobis ullam cumque, deserunt architecto laudantium perspiciatis repellendus magni distinctio excepturi vero ab natus autem!</p>
+                    </div>
+
+                   <div class="col-12 col-sm-4 text-center">
+                        <img class="img-fluid" src="static/image/dib/anime3.jpg" alt="Banner3">
+                        <h5>Diagnosticos</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis ea sunt? Quidem nesciunt perferendis nobis ullam cumque, deserunt architecto laudantium perspiciatis repellendus magni distinctio excepturi vero ab natus autem!</p>
+                    </div>
+
+                </div>  
+            </div> 
+        </section>
+        <!--Fin de Servicio-->
+        
+        <!-- Reservas -->
+        <section class="page-section bg-dark text-white" id="reserva">
+          <div class="container text-center">
+              <h2 class="mb-4">RESERVAS</h2>
+              <!--Este boton nos dirige a donde se le hace referencia-->
+              <a class="btn btn-light btn-xl" href="http://www.colibritechnology.pe/">Hacer Click</a>
+          </div>
+        </section>
+        <!-- Contacto-->
+        <section class="page-section" id="contacto">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">CONTACTANOS</h2>
+                        <hr class="divider my-4" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 ml-auto text-center mb-5 mb-lg-0">
+                        <img class="img-circulo" src="static/image/dib/celfono.jpg" alt="Banner7">
+                        <div>+51 123-456</div>
+                    </div>
+                    <div class="col-lg-6 mr-auto text-center">
+                        <img class="img-circulo" src="static/image/dib/mensage.jpg" alt="Banner8">
+                        <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pie de Pagina  -->
+        <footer class="bg-secondary py-5">
+            <div class="container">
+                <div class="text-light small text-center ">
+                    Copyright &copy;
+                    <!--  Este script agrega automáticamente el año actual al pie de página de su sitio web -->
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    - Company Name
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+
+
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+
+    <script src="{% static 'js/System_H_scrollPosStyler.js' %}"></script>
+    
+  </body>

@@ -1,0 +1,1 @@
+web: gunicorn boostrap_blog.wsgi --log-file -
